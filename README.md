@@ -1,2 +1,3 @@
-# internet.engineering-wp-theme
-WordPress theme for Internet Engineering
+# internet.engineering WordPress Theme
+
+A WordPress theme for Internet Engineering. This theme is currently in development.
