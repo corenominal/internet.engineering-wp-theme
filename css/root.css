@@ -4,4 +4,10 @@
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: #ccc;
+}
+
+.content {
+	background: #fff;
+	padding: 80px 0 100px 0;
 }

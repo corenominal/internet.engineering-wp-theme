@@ -1,0 +1,35 @@
+/**
+ * CSS file for single use template, "engineering"
+ */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #ccc;
+}
+
+.buildingblocks {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.content {
+	padding-top:100px;
+}
+
+.engineering {
+	background: #fff;
+	padding: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	-webkit-box-shadow: 10px 10px 30px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 30px 2px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 30px 2px rgba(0,0,0,0.75);
+}
+
+.engineering h1 {
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 22px;
+}
