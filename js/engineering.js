@@ -16,7 +16,6 @@ function doTheBlockyWocky()
 	var y = 0;
 	var blocks = [];
 	var block_size = 50;
-	var completed = 0;
 	var timer = 0;
 
 	function setupBlocks()
