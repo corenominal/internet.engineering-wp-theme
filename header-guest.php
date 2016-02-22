@@ -20,7 +20,7 @@ require get_template_directory() . '/inc/meta.php';
     <div id="navbar" class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign-in <i class="fa fa-padlock"></i></a></li>
+        <li><a href="<?php echo site_url('login') ?>">Sign-in <i class="fa fa-padlock"></i></a></li>
       </ul>
       
     </div>

@@ -16,6 +16,11 @@ get_header( 'guest' );
 
 					<?php the_content() ?>
 
+					<?php
+					//set_session( 'me', 'Philip Newborough' );
+					echo get_session( 'cheese' );
+					?>
+
 					<pre><code><?php print_r( $_COOKIE ) ?></code></pre>
 
 					<h4>Is logged in</h4>
