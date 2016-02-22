@@ -11,10 +11,27 @@ get_header( 'guest' );
 		<div class="row">
 			<div class="col-md-6 col-md-offset-6">
 				<div class="engineering">
-
-					<?php the_post() ?>
-
-					<?php the_content() ?>
+					<h1><i class="fa fa-lock"></i> Sign-in</h1>
+					<p>Enter your credentials below to login.</p>
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="Username ...">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Password ...">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-primary button">Sign-in</button>
+					    </div>
+					  </div>
+					</form>
 
 				</div>
 			</div>
