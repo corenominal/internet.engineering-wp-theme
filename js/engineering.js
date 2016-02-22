@@ -45,11 +45,25 @@ function doTheBlockyWocky()
 		
 	}
 
+	// function drawBlocks()
+	// {
+	// 	for ( i = 0; i < blocks.length; i++ )
+	// 	{
+	// 		clr = Math.floor((Math.random() * 238) + 1);
+	// 		c.fillStyle = 'rgba(' + clr + ', ' + clr + ', ' + clr + ', 1)';
+	// 		c.fillRect(blocks[i].x,blocks[i].y,block_size,block_size);
+	// 	}
+	// }
 	function drawBlocks()
 	{
 		for ( i = 0; i < blocks.length; i++ )
 		{
-			clr = Math.floor((Math.random() * 238) + 1);
+			clr = 255;
+			r = Math.floor((Math.random() * 2) + 1);
+			
+			if( r == 2 )
+				clr = 17;
+
 			c.fillStyle = 'rgba(' + clr + ', ' + clr + ', ' + clr + ', 1)';
 			c.fillRect(blocks[i].x,blocks[i].y,block_size,block_size);
 		}
