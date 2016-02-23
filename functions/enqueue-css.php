@@ -25,6 +25,7 @@ function enqueue_page_styles()
     {
     	wp_enqueue_style( 'engineering', get_template_directory_uri() . '/css/engineering.css', false );
     	wp_enqueue_script( 'engineering_js', get_template_directory_uri() . '/js/engineering.js', array(), false, true );
+        wp_enqueue_script( 'login_js', get_template_directory_uri() . '/js/login.js', array(), false, true );
     }
 
     if ( is_page( 'engineering' ) )
