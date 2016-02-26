@@ -1,5 +1,5 @@
 /**
- * corenominal
+ * For all pages
  */
 body {
 	-webkit-font-smoothing: antialiased;
@@ -10,4 +10,9 @@ body {
 .content {
 	background: #fff;
 	padding: 80px 0 100px 0;
+}
+
+svg {
+	height: 100%;
+	max-width: 100%;
 }

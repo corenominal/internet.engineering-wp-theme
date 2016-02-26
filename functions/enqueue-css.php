@@ -9,7 +9,7 @@ function enqueue_page_styles()
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome-4.5.0/css/font-awesome.min.css', false );
     //wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/vendor/bootstrap.css', false );
     wp_enqueue_style( 'bootstrap_theme', get_template_directory_uri() . '/css/vendor/ie-bootstrap-theme.min.css', false );
-    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/root.css', false );
+    wp_enqueue_style( 'root', get_template_directory_uri() . '/css/root.css', false );
 
     /**
      * Default Scripts
