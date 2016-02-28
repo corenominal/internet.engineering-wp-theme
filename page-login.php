@@ -24,20 +24,20 @@ get_header( 'guest' );
 					<p class="sr-only">Enter your credentials below to login.</p>
 					<form class="form-horizontal">
 					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+					    <label for="user_login" class="col-sm-2 control-label">Username</label>
 					    <div class="col-sm-10">
 					      <input type="text" class="form-control" id="user_login" placeholder="Username ...">
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+					    <label for="user_password" class="col-sm-2 control-label">Password</label>
 					    <div class="col-sm-10">
 					      <input type="password" class="form-control" id="user_password" placeholder="Password ...">
 					    </div>
 					  </div>
 					  <div class="form-group">
 					    <div class="col-sm-offset-2 col-sm-10">
-					      <input id="foo" type="hidden" value="bar">
+					      <input id="foo" type="hidden" value="<?php echo wp_create_nonce( 'user-login' ) ?>">
 					      <button id="signin" data-endpoint="<?php echo site_url( '/wp-json/ie-api/login' ); ?>" type="submit" class="btn btn-primary button"><i class="fa fa-sign-in"></i> Sign-in</button>
 					    </div>
 					  </div>
