@@ -15,7 +15,7 @@ function doTheBlockyWocky()
 	var x = 0;
 	var y = 0;
 	var blocks = [];
-	var block_size = 50;
+	var block_size = 150;
 	var timer = 0;
 
 	function setupBlocks()
@@ -58,13 +58,20 @@ function doTheBlockyWocky()
 	{
 		for ( i = 0; i < blocks.length; i++ )
 		{
-			clr = 255;
-			r = Math.floor((Math.random() * 2) + 1);
-			
-			if( r == 2 )
-				clr = 17;
+			clrs = [
+				'rgba(227, 27, 43, 1)',
+				'rgba(47, 153, 207, 1)',
+				'rgba(35, 31, 32, 1)',
+				'rgba(48, 169, 79, 1)',
+				'rgba(255, 255, 255, 1)',
+				'rgba(233, 90, 41, 1)',
+				'rgba(228, 0, 142, 1)',
+				'rgba(252, 245, 5, 1)',
+				'rgba(121, 201, 243, 1)'
+			];
+			r = Math.floor( ( Math.random() * 8) );
 
-			c.fillStyle = 'rgba(' + clr + ', ' + clr + ', ' + clr + ', 1)';
+			c.fillStyle = clrs[r];
 			c.fillRect(blocks[i].x,blocks[i].y,block_size,block_size);
 		}
 	}
