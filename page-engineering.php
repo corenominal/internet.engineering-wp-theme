@@ -2,7 +2,7 @@
 /**
  * Single use page for user login
  */
-get_header( 'guest' );
+get_header();
 ?>
 
 <div id="buildingblocks" class="buildingblocks"></div>

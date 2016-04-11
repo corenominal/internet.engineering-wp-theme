@@ -2,7 +2,13 @@
 /**
  * Single use page for user login
  */
-get_header( 'guest' );
+
+/**
+ * Test, if user is already logged in, redirect to homepage
+ */
+if( is_user_logged_in() ):
+	wp_redirect( site_url() );
+endif;
 ?>
 
 <div id="buildingblocks" class="buildingblocks"></div>
