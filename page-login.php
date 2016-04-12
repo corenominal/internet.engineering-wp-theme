@@ -6,9 +6,10 @@
 /**
  * Test, if user is already logged in, redirect to homepage
  */
-if( is_user_logged_in() ):
+if( is_user_logged_in() )
 	wp_redirect( site_url() );
-endif;
+
+get_header();
 ?>
 
 <div id="buildingblocks" class="buildingblocks"></div>
