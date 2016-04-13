@@ -11,7 +11,7 @@ require get_template_directory() . '/functions/theme-activation.php';
 /**
  * Queue up the CSS
  */
-require get_template_directory() . '/functions/enqueue-css.php';
+require get_template_directory() . '/functions/enqueue-scripts-n-styles.php';
 
 /**
  * Include random stuff that does not fit elsewhere.
