@@ -34,5 +34,10 @@ function enqueue_page_styles()
         wp_enqueue_script( 'engineering_js', get_template_directory_uri() . '/js/engineering.js', array(), false, true );
     }
 
+    if ( is_user_logged_in() )
+    {
+        wp_enqueue_script( 'loggedin_js', get_template_directory_uri() . '/js/loggedin.js', array(), false, true );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_page_styles' );

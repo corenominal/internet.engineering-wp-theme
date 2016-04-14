@@ -25,16 +25,10 @@ if( is_user_logged_in() ):
       <a class="navbar-brand" href="<?php echo site_url(); ?>">internet&middot;engineering</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      
-      <form class="navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Search...">
-      </form>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Help</a></li>
+        
+        <li><a href="#" id="signout" data-endpoint="<?php echo site_url( '/wp-json/ie-api/logout' ); ?>">Logout</a></li>
       </ul>
       
     </div>
